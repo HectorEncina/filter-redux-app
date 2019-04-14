@@ -9,20 +9,16 @@ import { ToggleAllTodoAction } from './todo.actions';
   styles: []
 })
 export class TodoComponent implements OnInit {
-
   completado = false;
 
-  constructor(private store: Store<AppState>) { }
+  constructor(private store: Store<AppState>) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   toggleAll() {
-this.completado = !this.completado;
+    this.completado = !this.completado;
 
-const action = new ToggleAllTodoAction( this.completado );
-this.store.dispatch( action );
-
+    const action = new ToggleAllTodoAction(this.completado);
+    this.store.dispatch(action);
   }
-
 }

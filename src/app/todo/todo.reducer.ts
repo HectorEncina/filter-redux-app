@@ -1,10 +1,9 @@
 import * as fromTodo from './todo.actions';
 import { Todo } from './model/todo.model';
-import { from } from 'rxjs';
 
 const todo1 = new Todo('Aprender patrón redux');
-const todo2 = new Todo('Desarrollar sw aprendeuls');
-const todo3 = new Todo('ciencia de datos');
+const todo2 = new Todo('Desarrollar sw');
+const todo3 = new Todo('desplegar aplicación de producción');
 
 todo2.completado = true;
 
